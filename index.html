@@ -17,7 +17,13 @@
             background: #0A1A3C; /* Navy */
             color: white;
             text-align: center;
-            padding: 80px 20px;
+            padding: 60px 20px;
+        }
+
+        header img {
+            max-width: 150px;
+            display: block;
+            margin: 0 auto 20px;
         }
 
         header h1 {
@@ -42,6 +48,11 @@
             margin-bottom: 10px;
         }
 
+        h3 {
+            color: #0A1A3C;
+            margin-top: 20px;
+        }
+
         .services ul {
             list-style-type: disc;
             padding-left: 20px;
@@ -55,6 +66,8 @@
 
         .location {
             margin-bottom: 20px;
+            border-left: 3px solid #0A1A3C;
+            padding-left: 10px;
         }
 
         footer {
@@ -64,11 +77,21 @@
             color: #555;
             margin-top: 40px;
         }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            header p {
+                font-size: 1rem;
+            }
+        }
     </style>
 </head>
 <body>
 
 <header>
+    <img src="logo.png" alt="Colman O'Brien Logo">
     <h1>Colman O'Brien</h1>
     <p>Chartered and CORU Registered Physiotherapist</p>
     <p><em>From Injury to Performance—For Every Level.</em></p>
@@ -137,9 +160,3 @@
 
 </body>
 </html>
-<header>
-    <img src="logo.png" alt="Colman O'Brien Logo" style="max-width:150px; display:block; margin: 0 auto 20px;">
-    <h1>Colman O'Brien</h1>
-    <p>Chartered and CORU Registered Physiotherapist</p>
-    <p><em>From Injury to Performance—For Every Level.</em></p>
-</header>
